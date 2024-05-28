@@ -9,28 +9,27 @@ echo -e "
          -----------------
          SÍ ESTÁN INSTALADOS,
          SE PROCEDE CON LA INSTALCIÓN
-	 -----------------
-	 Esta aplicación nos permite descargar video o el audio del video
-	 para su funcionamiento se requiere que esten instalados las
-	 aplicaciones de yt-dlp y zenity.
-	 -----------------
-	 Creado por: Jenrry Soto Dextre
-	 Correo: dextre1481@gmail.com , jsd@dextre.xyz 
+	     -----------------
+         Esta aplicación nos permite descargar video o el audio del
+         video, para su funcionamiento se requiere que esten instalados
+         las aplicaciones: yt-dlp y zenity.
+         -----------------
+         Creado por: Jenrry Soto Dextre
+         Correo: dextre1481@gmail.com , jsd@dextre.xyz 
 	 "
-
+yo=$(whoami)
 icono=$PWD/dva3.svg
 ruta=$PWD/dva3.sh
-sudo bash -c  'cat > /usr/share/applications/dva3.desktop << EOF
+cat > /home/$yo/.local/share/applications/dva3.desktop << EOF
 [Desktop Entry]
 Type=Application
 Categories=Utilitario
 Name=DVA3
 Comment=Descarga Video Audio
-Icon='$icono'
-Exec='$ruta'
-MimeType=image/jpeg;image/png;image/svg;
+Icon=$icono
+Exec=$ruta
 Terminal=false
-EOF'
+EOF
 
 else
 
