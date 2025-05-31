@@ -1,0 +1,20 @@
+QUE SE NECESITA PARA QUE FUCNIONE?
+Tener instalado:
+
+python3-tkinter ó
+python3-tk
+yt-dlp
+ffmpeg
+firefox (hacer sesion en youtube para emplear las cookies)
+zenity
+--------------------------------
+COMO INSTALAR?
+
+Correr el script
+bash install-dva3.sh
+-------------------------------
+COMO LO EJECUTAR EL PROGRAMA?
+
+Buscar dentro de las aplicaciones instaladas el programa
+DVA3 y click en el icono
+

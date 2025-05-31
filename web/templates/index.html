@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargador de Videos/Audios</title>
+</head>
+
+<body>
+    <h1>Descargador de Videos/Audios</h1>
+    <form action="/download" method="post">
+        <label for="url">Ingrese la URL del video o audio:</label><br>
+        <input type="text" id="url" name="url" required style="width: 350px;"><br><br>
+
+        <label>Seleccione:</label><br>
+        <input type="radio" id="video" name="tipo" value="video" required>
+        <label for="video">Video</label><br>
+        <input type="radio" id="audio" name="tipo" value="audio" required>
+        <label for="audio">Audio</label><br><br>
+
+        <button type="submit">Descargar</button>
+    </form>
+</body>
+
+</html>

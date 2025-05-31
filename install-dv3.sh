@@ -1,26 +1,29 @@
 #!/bin/bash
 #
-if [[ "$(which zenity )" = "/usr/bin/zenity" && "$(which yt-dlp)" = '/usr/bin/yt-dlp' && "$(which ffmpeg)" = '/usr/bin/ffmpeg' ]]; then
+if [[ "$(which python )" = "/usr/bin/python" "$(which python3 )" = "/usr/bin/python3"  && "$(which yt-dlp)" = '/usr/bin/yt-dlp' && "$(which tkinter)" =  ]]; then
+
 echo -e "
          SE COMPRUEBA QUE:
          -----------------
-         zenity
+         python ó
+         python3
          yt-dlp
-	 ffmpeg
+         tkinter
+         firefox (hacer login a youtube)
          -----------------
          SÍ ESTÁN INSTALADOS,
          SE PROCEDE CON LA INSTALCIÓN
 	     -----------------
          Esta aplicación nos permite descargar video o el audio del
          video, para su funcionamiento se requiere que esten instalados
-         las aplicaciones: yt-dlp, zenity y ffmpeg
+         las aplicaciones: yt-dlp, python y firefox.
          -----------------
          Creado por: Jenrry Soto Dextre
-         Correo: dextre1481@gmail.com , jsd@dextre.xyz 
+         Correo: dextre1481@gmail.com , web: https://dextre.xyz 
 	 "
 yo=$(whoami)
 icono=$PWD/dva3.svg
-ruta=$PWD/dva3.sh
+ruta=$PWD/dva3.py
 cat > /home/$yo/.local/share/applications/dva3.desktop << EOF
 [Desktop Entry]
 Type=Application
@@ -37,9 +40,12 @@ else
 echo -e "
          PORFAVOR INSTALAR:
          ------------------
-         zenity
+         sudo dnf install python3-tkinter ó
+         sudo apt install python3-tk
          yt-dlp
 	 ffmpeg
+         firefix (hacer sesion en youtube para emplear las cookies)
+
          ------------------
          Y LUEGO VOLVER A EJECUTAR ESTE SCRIPT
 	 "
