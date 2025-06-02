@@ -1,12 +1,18 @@
 QUE SE NECESITA PARA QUE FUCNIONE?
+Distribución basado en ubuntu o debian:
 Tener instalado:
 
-python3-tkinter ó
-python3-tk
-yt-dlp
-ffmpeg
+sudo apt install python3 python3-tk -y
+sudo apt install zenity -y
+sudo apt install yt-dlp -y
+sudo apt install ffmpeg -y
+
+Ditribución nasado en rpm como Fedora:
+sudo dnf install python3-tkinter python3 -y
+sudo dnf install yt-dlp -y
+sudo dnf install ffmpeg -y
 firefox (hacer sesion en youtube para emplear las cookies)
-zenity
+sudo dnf install zenity -y
 --------------------------------
 COMO INSTALAR?
 
