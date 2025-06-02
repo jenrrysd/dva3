@@ -2,9 +2,14 @@ QUE SE NECESITA PARA QUE FUCNIONE?
 Distribución basado en ubuntu o debian:
 Tener instalado:
 
-sudo apt install python3 python3-tk zenity yt-dlp ffmpeg -y
+sudo apt install python3 python3-tk zenity ffmpeg python3-secretstorage   -y
 
-Ditribución nasado en rpm como Fedora:
+Instalar el mas reciente comando yt-dlp:
+
+sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
+
+Ditribución basado en rpm como Fedora:
 
 sudo dnf install python3-tkinter python3 yt-dlp ffmpeg -y
 
